@@ -30,8 +30,8 @@ function Marquees() {
     return (
         <div className='py-20 mt-32'>
             {
-                images.map((item)=>{
-                    return <Marquee ImageUrl={item}/>
+                images.map((item,index)=>{
+                    return <Marquee ImageUrl={item} key={index}/>
                 })
             }
         </div>

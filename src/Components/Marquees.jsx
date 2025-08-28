@@ -28,10 +28,10 @@ function Marquees() {
         ],
     ];
     return (
-        <div className='py-20 mt-32'>
+        <div className='py-20 mt-32 w-full relative'>
             {
                 images.map((item,index)=>{
-                    return <Marquee ImageUrl={item} key={index}/>
+                    return <Marquee ImageUrl={item} key={index} direction={index===0 ? "left":"right"}/>
                 })
             }
         </div>
